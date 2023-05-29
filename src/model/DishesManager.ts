@@ -16,7 +16,7 @@ export class DishesManager {
     }
 
     removeDish (id: string) {
-        this.dishes.filter(dish => dish.id !== id);
+        this.dishes = this.dishes.filter(dish => dish.id !== id);
     }
 
     getDishes () {
