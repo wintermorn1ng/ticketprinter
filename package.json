@@ -1,7 +1,7 @@
 {
   "name": "ticketprinter",
   "version": "0.0.1",
-  "private": true,
+  "author": "victor",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -34,5 +34,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "license": "MIT"
 }
