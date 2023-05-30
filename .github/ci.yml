@@ -1,0 +1,24 @@
+# https://juejin.cn/post/7087061029812699173
+# https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on
+
+name: ut-flow
+on: 
+  push:
+      branches: [ main ]
+jobs:
+  # 指定一个Job的名称为check-bats-version
+  run-ut:
+    runs-on: ubuntu-latest
+    # 存放 check-bats-version 作业中的所有Step
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      # 下载node
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+      # 安装依赖
+      - name: Installing Dependencies
+        run: yarn install
+      # 运行自动化测试
+      - name: Running Test
+        run: yarn test
