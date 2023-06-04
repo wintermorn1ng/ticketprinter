@@ -1,16 +1,16 @@
-import { Dishes } from "./Dishes";
+import { Dish } from "./Dish";
 
 export class DishesManager {
-    private dishes: Dishes[] = [];
+    private dishes: Dish[] = [];
 
-    constructor (dishes?: Dishes[]) {
+    constructor (dishes?: Dish[]) {
         if (dishes) {
             this.dishes = dishes;
         }
     }
 
     addDish (name: string) {
-        let dish = new Dishes(name);
+        let dish = new Dish(name);
         this.dishes.push(dish);
         return dish.id;
     }

@@ -1,15 +1,14 @@
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import type { PropsWithChildren } from 'react';
 import {
   SafeAreaView,
-  useColorScheme,
 } from 'react-native';
 
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 import { DishListView } from './view/DishListView';
 import { DishesManager } from './model/DishesManager';
+import { ThemeProvider } from '@rneui/themed';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -17,20 +16,17 @@ type SectionProps = PropsWithChildren<{
 
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
 
   const dishManager = new DishesManager();
   dishManager.addDish('dish1');
   dishManager.addDish('dish2');
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <DishListView dishsManager={dishManager}></DishListView>
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <ThemeProvider>
+        <DishListView dishsManager={dishManager}></DishListView>
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
 

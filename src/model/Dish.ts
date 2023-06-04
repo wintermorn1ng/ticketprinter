@@ -1,6 +1,6 @@
-import { UUID } from "../Tools";
+import { UUID } from "../tools/Tools";
 
-export class Dishes {
+export class Dish {
     name: string;
     id: string;
     prices?: number;
