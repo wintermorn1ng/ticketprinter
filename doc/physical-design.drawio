@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="UmqCcvpv-8nRWfGZF040" name="Page-1">
+        <mxGraphModel dx="1350" dy="1007" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="14" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Model&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="760" y="110" width="520" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Tools" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=bottom;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="390" width="460" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Resource" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Tools" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="BluetoothManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="PrinterManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Model&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="110" width="460" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="DishManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="DishListView" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="220" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="App" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="BlueToothManageView" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="220" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="PrinterView" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1110" y="220" width="140" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
