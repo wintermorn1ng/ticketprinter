@@ -1,32 +1,36 @@
 import React from 'react';
-import type { PropsWithChildren } from 'react';
-import {
-  SafeAreaView,
-} from 'react-native';
-
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { DishListView } from './view/DishListView';
 import { DishesManager } from './model/DishesManager';
 import { ThemeProvider } from '@rneui/themed';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+import { BluetoothManagerView } from './view/BluetoothManageView';
+import { NavigationContainer } from '@react-navigation/native';
 
 
-function App(): JSX.Element {
+const Tab = createBottomTabNavigator();
 
+const DishesView = () => {
   const dishManager = new DishesManager();
   dishManager.addDish('dish1');
   dishManager.addDish('dish2');
+  return (<>
+    <DishListView dishsManager={dishManager}></DishListView>
+  </>)
+}
 
+function App(): JSX.Element {
   return (
-    <SafeAreaProvider>
-      <ThemeProvider>
-        <DishListView dishsManager={dishManager}></DishListView>
-      </ThemeProvider>
-    </SafeAreaProvider>
+    // <SafeAreaProvider>
+    //   <ThemeProvider>
+        <NavigationContainer>
+          <Tab.Navigator>
+            <Tab.Screen name="Home" component={DishesView} />
+            <Tab.Screen name="Settings" component={BluetoothManagerView} />
+          </Tab.Navigator>
+        </NavigationContainer>
+    //   </ThemeProvider>
+    // </SafeAreaProvider>
   );
 }
 
