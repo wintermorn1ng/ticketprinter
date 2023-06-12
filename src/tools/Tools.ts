@@ -1,3 +1,5 @@
+import { ToastAndroid } from "react-native";
+
 export function UUID(): string {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
         const r = (Math.random() * 16) | 0;
@@ -5,3 +7,12 @@ export function UUID(): string {
         return v.toString(16);
     });
 }
+
+export const showToast = (text: string) => {
+    ToastAndroid.show(text, ToastAndroid.SHORT);
+  };
+
+
+export const showToastLong = (text: string) => {
+    ToastAndroid.show(text, ToastAndroid.LONG);
+  };

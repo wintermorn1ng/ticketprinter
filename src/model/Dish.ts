@@ -5,8 +5,9 @@ export class Dish {
     id: string;
     prices?: number;
 
-    constructor (name: string) {
+    constructor (name: string, prices?: number) {
         this.name = name;
         this.id = UUID();
+        this.prices = prices;
     }
 }

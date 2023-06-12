@@ -9,8 +9,8 @@ export class DishesManager {
         }
     }
 
-    addDish (name: string) {
-        let dish = new Dish(name);
+    addDish (name: string, prices?: number) {
+        let dish = new Dish(name, prices);
         this.dishes.push(dish);
         return dish.id;
     }
@@ -36,6 +36,10 @@ export class DishesManager {
 
     toJSON () {
         return JSON.stringify(this.dishes);
+    }
+
+    fromJSON (jsonStr: string) {
+        this.dishes = JSON.parse(jsonStr);
     }
 
     static fromJSON (jsonStr: string) {
